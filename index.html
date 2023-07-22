@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm clock</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="container">
+            <h2>Multiple Timers App</h2>
+            <div id="timer">
+                <div >
+                    <form class="row">
+                        <span>Set Time:</span>
+                        <div class="time">
+                            <span><input type="number" min="0" max="60" id="hh" ></span>
+                            :<span><input type="number"  min="0" max="60" id="mm"></span>:
+                            <span><input type="number" min="0" max="60" id="ss"></span>
+                        </div>
+                        <button type="submit" id="setBtn" onclick="addTimer()" >Set</button>
+                    </form>
+                </div>
+            </div>
+            <button id="curtime">Current Timers</button>
+            <div id="timers">
+               
+                <div class="row" >
+                    <div class="time">
+                        <span><input type="number" min="0" max="60" id="hh" ></span>
+                        :<span><input type="number"  min="0" max="60" id="mm"></span>:
+                        <span><input type="number" min="0" max="60" id="ss"></span>
+                    </div>
+                    <button id="setBtn">STOP</button>
+                </div>
+                <div class="row" >
+                    <div class="time">
+                        <span><input type="number" min="0" max="60" id="hh" ></span>
+                        :<span><input type="number"  min="0" max="60" id="mm"></span>:
+                        <span><input type="number" min="0" max="60" id="ss"></span>
+                    </div>
+                    <button id="setBtn">STOP</button>
+                </div>
+                <div class="row" >
+                    <div class="time">
+                        <span><input type="number" min="0" max="60" id="hh" ></span>
+                        :<span><input type="number"  min="0" max="60" id="mm"></span>:
+                        <span><input type="number" min="0" max="60" id="ss"></span>
+                    </div>
+                    <button id="setBtn">STOP</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
